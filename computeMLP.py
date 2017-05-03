@@ -68,13 +68,13 @@ def main():
 
     print('\nComputing the Mean of the Log-Probability for MNIST test data...')
     start = time.time()
-    res_M = meanLogProb(train_MNIST[0:num_GS, :], test_MNIST[0:num_GS, :], sigma_opt)
+    res_M = meanLogProb(train_MNIST, test_MNIST, sigma_opt)
     end = time.time()
     time_M = end - start
 
     print('\nComputing the Mean of the Log-Probability for CIFAR test data...')
     start = time.time()
-    res_C = meanLogProb(train_CIFAR[0:num_GS, :], test_CIFAR[0:num_GS, :], sigma_opt)
+    res_C = meanLogProb(train_CIFAR, test_CIFAR, sigma_opt)
     end = time.time()
     time_C = end - start
 
